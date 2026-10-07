@@ -1,0 +1,170 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf9eb;
+    color: #222222;
+}
+
+
+.cabecalho {
+    background-color: #8B0000;
+    color: #FFFFFF;
+    padding: 25px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.titulo-cabecalho {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.introducao {
+    padding: 20px 40px 0 40px;
+}
+
+.introducao h2 {
+    font-family: 'Playfair Display', serif;
+    color: #8B0000;
+    font-weight: normal;
+}
+
+/* Layout Estilo Magazine (Grid de Cartões) */
+.grid-magazine {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 40px 50px 40px;
+}
+
+
+.cartao-magazine {
+    background-color: #ffffff;
+    border: 1px solid #e0ddc8;
+    border-radius: 8px;
+    padding: 30px;
+    flex: 1 1 350px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao-magazine:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.cartao-magazine.destaque {
+    background-color: #7C0A02;
+    color: #ffffff;
+    border: none;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #8B0000;
+    color: #ffffff;
+    padding: 4px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.cartao-magazine.destaque .tag {
+    background-color: #ffffff;
+    color: #7C0A02;
+}
+
+.cartao-magazine h2 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+    font-size: 26px;
+}
+
+.citacao {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 20px;
+    border-left: 4px solid #8B0000;
+    margin: 20px 0;
+    padding-left: 15px;
+    color: #555555;
+}
+
+.citacao cite {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #888888;
+    font-style: normal;
+}
+
+.seccao-onu {
+    padding: 40px;
+    background-color: #f2f0d8;
+    border-top: 2px solid #8B0000;
+}
+
+.titulo-seccao {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    color: #8B0000;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+.grid-kanban {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.coluna-kanban {
+    flex: 1 1 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 5px solid #888;
+}
+
+.coluna-kanban.a-fazer {
+    border-top-color: #d9534f;
+}
+
+.coluna-kanban.em-andamento {
+    border-top-color: #f0ad4e;
+}
+
+.coluna-kanban.feito {
+    border-top-color: #5cb85c;
+}
+
+.coluna-kanban h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.item-kanban {
+    background-color: #faf9eb;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    border-left: 3px solid #ccc;
+}
+
+.item-kanban h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.item-kanban p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
